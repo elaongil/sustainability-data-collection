@@ -4,6 +4,7 @@ import { Cpu, Zap, Database, Brain, Cog } from 'lucide-react';
 import { useCellStore } from '../../store/cellStore';
 import { shouldAnimate } from '../../store/configStore';
 import WikipediaCell from './WikipediaCell';
+import CDPExtractorCell from './CDPExtractorCell';
 
 const cellIcons = {
   processor: Cpu,
@@ -57,8 +58,14 @@ const CellCard = ({ cell }) => {
       <div 
         className="flex items-start gap-3"
         onClick={(e) => {
-          // Prevent toggling when clicking inside the Wikipedia form
-          if (cell.active && cell.id === 'wikipedia-extractor' && e.target.closest('form')) {
+          // Prevent toggling when clicking inside the Wikipedia form or file upload
+          if (
+            cell.active && 
+            (
+              (cell.id === 'wikipedia-extractor' && e.target.closest('form')) ||
+              (cell.id === 'cdp-extractor' && e.target.closest('form'))
+            )
+          ) {
             e.stopPropagation();
             return;
           }
@@ -123,6 +130,17 @@ const CellCard = ({ cell }) => {
                   className="mt-2"
                 >
                   <WikipediaCell />
+                </motion.div>
+              )}
+
+            {cell.id === 'cdp-extractor' && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="mt-2"
+                >
+                  <CDPExtractorCell />
                 </motion.div>
               )}
             </>
