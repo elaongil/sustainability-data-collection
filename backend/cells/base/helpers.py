@@ -14,4 +14,4 @@ def clear_directory(directory_path):
             except Exception as e:
                 print(f"Error deleting {file_path}: {e}")
     except:
-        print("file path is not present")
+        print("file path is not present to delete")

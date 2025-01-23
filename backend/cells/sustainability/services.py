@@ -1,5 +1,7 @@
 import os
 import tempfile
+from urllib.parse import urljoin
+
 import pandas as pd
 import logging
 import shutil
@@ -7,9 +9,8 @@ from datetime import datetime
 
 from cells.base.helpers import clear_directory
 from ..base.cell import BaseCell
-from ..base.serializers import FileUploadSerializer
-from .data_extraction import process_cdp_report
-# from get_ccf_data import get_ongil_ccf_estimates, generate_explainability_text
+from ..base.serializers import FileUploadSerializer, SessionIdSerializer
+from .data_extraction import process_cdp_report, process_annual_report
 
 from config.settings import MEDIA_ROOT
 UPLOAD_DIR = os.path.join(MEDIA_ROOT, 'app_files')
@@ -24,7 +25,9 @@ class CDPExtractorCell(BaseCell):
         else:
             return False
 
-    def process(self, data):
+    def process(self, data, *args, **kwargs):
+
+        request = kwargs["request"]
 
         logger = logging.getLogger(__name__)
 
@@ -72,7 +75,9 @@ class CDPExtractorCell(BaseCell):
                 }
 
             # Write the dataframe to the output folder
-            output_file_path = os.path.join(output_folder_path, 'cdp-report.xlsx')
+            output_file_path = os.path.join(output_folder_path, f'{self.__class__.__name__}.xlsx')
+            output_file_url = urljoin(request.build_absolute_uri('/'), os.path.relpath(output_file_path))
+
             try:
                 logger.info("Writing output DataFrame to Excel file...")
                 df.to_excel(output_file_path, index=False)
@@ -88,10 +93,9 @@ class CDPExtractorCell(BaseCell):
             logger.info("Process completed successfully.")
             return {
                 'data': {
-                    'output_path': output_file_path,
+                    'output_path': output_file_url,
                     'metadata': {
                         'file_count': len(files),
-                        'output_folder': output_folder_path,
                         'extraction_timestamp': datetime.now().isoformat()
                     },
                     'error': None
@@ -108,69 +112,85 @@ class CDPExtractorCell(BaseCell):
 
 
 class AnnualReportExtractorCell(BaseCell):
-    def validate_input(self, data):
-        return 'files' in data and isinstance(data['files'], list) and all(hasattr(file, 'read') for file in data['files'])
 
-    def process(self, data):
+    def validate_input(self, data):
+        serializer = FileUploadSerializer(data=data)
+        if serializer.is_valid():
+            return True
+        else:
+            return False
+
+    def process(self, data, *args, **kwargs):
+
+        request = kwargs["request"]
 
         logger = logging.getLogger(__name__)
 
-        files = data['files']
+        serializer = FileUploadSerializer(data=data)
+        if serializer.is_valid():
+            pass
+        session_id = serializer.validated_data.get('session_id')
+        files = serializer.validated_data.get('files')
+
+        logger.info("Deleting folder if exists for processing...")
+        clear_directory(f"{UPLOAD_DIR}/{session_id}/{self.__class__.__name__}")
+
+        logger.info("Creating folder for processing...")
+        input_folder_path = f"{UPLOAD_DIR}/{session_id}/{self.__class__.__name__}/input"
+        output_folder_path = f"{UPLOAD_DIR}/{session_id}/{self.__class__.__name__}/output"
+        config_path = f"{MEDIA_ROOT}/required/beverage_config.xlsx"
+        os.makedirs(input_folder_path, exist_ok=True)
+        os.makedirs(output_folder_path, exist_ok=True)
 
         try:
-            logger.info("Creating temporary folder for processing...")
-            with tempfile.TemporaryDirectory(delete = False) as temp_folder:
-                inputs_folder = os.path.join(temp_folder, 'inputs')
-                output_folder = os.path.join(temp_folder, 'output')
+            logger.info("Writing files to the inputs folder...")
+            # Write files to the inputs folder
 
-                os.makedirs(inputs_folder, exist_ok=True)
-                os.makedirs(output_folder, exist_ok=True)
+            for file in files:
+                with open(f"{UPLOAD_DIR}/{session_id}/{self.__class__.__name__}/input/{file.name}", "wb") as destination:
+                    for chunk in file.chunks():
+                        destination.write(chunk)
 
-                # Write files to the inputs folder
-                logger.info("Writing files to the inputs folder...")
-                for file in files:
-                    file_path = os.path.join(inputs_folder, file.name)
-                    with open(file_path, 'wb') as f:
-                        shutil.copyfileobj(file, f)
+            logger.info("Processing files...")
 
-                logger.info("Processing files...")
-                try:
-                    df = process_annual_report(inputs_folder, output_folder, config_path)
-                except Exception as e:
-                    logger.error(f"Error processing Annual report: {str(e)}")
-                    return {
-                        'data': {
-                            'output_path': None,
-                            'error': f"Error processing Annual report: {str(e)}"
-                        }
-                    }
-
-                # Write the dataframe to the output folder
-                output_file_path = os.path.join(output_folder, 'annual-report.xlsx')
-                try:
-                    logger.info("Writing output DataFrame to Excel file...")
-                    df.to_excel(output_file_path, index=False)
-                except Exception as e:
-                    logger.error(f"Error writing output file: {str(e)}")
-                    return {
-                        'data': {
-                            'output_path': None,
-                            'error': f"Error writing output file: {str(e)}"
-                        }
-                    }
-
-                logger.info("Process completed successfully.")
+            try:
+                df = process_annual_report(input_folder_path, config_path)
+            except Exception as e:
+                logger.error(f"Error processing {self.__class__.__name__} report: {str(e)}")
                 return {
                     'data': {
-                        'output_path': output_file_path,
-                        'metadata': {
-                            'file_count': len(files),
-                            'output_folder': output_folder,
-                            'extraction_timestamp': datetime.now().isoformat()
-                        },
-                        'error': None
+                        'output_path': None,
+                        'error': f"Error processing {self.__class__.__name__} report: {str(e)}"
                     }
                 }
+
+            # Write the dataframe to the output folder
+            output_file_path = os.path.join(output_folder_path, f'{self.__class__.__name__}.xlsx')
+            output_file_url = urljoin(request.build_absolute_uri('/'), os.path.relpath(output_file_path))
+
+            try:
+                logger.info("Writing output DataFrame to Excel file...")
+                df.to_excel(output_file_path, index=False)
+            except Exception as e:
+                logger.error(f"Error writing output file: {str(e)}")
+                return {
+                    'data': {
+                        'output_path': None,
+                        'error': f"Error writing output file: {str(e)}"
+                    }
+                }
+
+            logger.info("Process completed successfully.")
+            return {
+                'data': {
+                    'output_path': output_file_url,
+                    'metadata': {
+                        'file_count': len(files),
+                        'extraction_timestamp': datetime.now().isoformat()
+                    },
+                    'error': None
+                }
+            }
         except Exception as e:
             logger.error(f"Unexpected error: {str(e)}")
             return {
@@ -183,13 +203,18 @@ class AnnualReportExtractorCell(BaseCell):
 
 class CCFEstimatorCell(BaseCell):
     def validate_input(self, data):
-        return all(key in data for key in ['cdp_report_path', 'annual_report_path'])
+        serializer = SessionIdSerializer(data=data)
+        if serializer.is_valid():
+            return True
+        else:
+            return False
 
-    def process(self, data):
+    def process(self, data, *args, **kwargs):
         logger = logging.getLogger(__name__)
 
-        cdp_report_path = data['cdp_report_path']
-        annual_report_path = data['annual_report_path']
+        cdp_report_path = ""
+        annual_report_path = ""
+        config_path = f"{MEDIA_ROOT}/required/beverage_config.xlsx"
 
         try:
             logger.info("Reading CDP report and annual report files...")
@@ -248,7 +273,7 @@ class CCFEstimatorCell(BaseCell):
                         'extraction_timestamp': datetime.now().isoformat()
                     },
                     'estimates': estimates_json,
-                    'explanation': dependencies_json,
+                    'explanation': explainability_json,
                     'error': None
                 }
             }

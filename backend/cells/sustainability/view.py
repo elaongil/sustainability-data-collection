@@ -13,4 +13,5 @@ class CCFEstimatorView(BaseCellView):
 
 
 class AnnualReportExtractorView(BaseCellView):
+    parser_classes = [MultiPartParser]
     cell_class = AnnualReportExtractorCell

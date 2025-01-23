@@ -8,3 +8,7 @@ class FileUploadSerializer(serializers.Serializer):
         allow_empty=False,
         write_only=True
     )
+
+
+class SessionIdSerializer(serializers.Serializer):
+    session_id = serializers.CharField(max_length=255, required=True)

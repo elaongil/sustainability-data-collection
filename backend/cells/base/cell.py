@@ -47,7 +47,7 @@ class BaseCellView(APIView):
             
             try:
                 # Process the request
-                result = cell.process(request.data)
+                result = cell.process(request.data, request=request)
                 
                 # Validate response data
                 if not isinstance(result, dict):
