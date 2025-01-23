@@ -53,9 +53,9 @@ def extract_values(context, relevant, previous = None):
             {"role": "user", "content": f'Extract the parameter values from the above document in the requested format'}
         )
     completion = client.chat.completions.create(
-        model=DEPLOYMENT,
+        model=deployment,
         response_format={"type": "json_object"},
-        messages= messages
+        messages=messages
     )
     try:
         output = json.loads(completion.choices[0].message.content)
