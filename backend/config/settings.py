@@ -1,19 +1,22 @@
 """
 Django settings for config project.
 """
-
+import os
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-development-key-change-in-production'
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config("DEBUG")
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = config("ALLOWED_HOSTS")
+ALLOWED_HOSTS = ['*']
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -38,9 +41,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'cells.middleware.RequestResponseLoggingMiddleware',
 ]
-
-# CSRF settings
-CSRF_TRUSTED_ORIGINS = ['http://localhost:5173']
 
 ROOT_URLCONF = 'config.urls'
 
@@ -107,6 +107,7 @@ import json
 import numpy as np
 from django.core.serializers.json import DjangoJSONEncoder
 
+
 class ExtendedJSONEncoder(DjangoJSONEncoder):
     def default(self, obj):
         if isinstance(obj, np.integer):
@@ -116,6 +117,7 @@ class ExtendedJSONEncoder(DjangoJSONEncoder):
         if isinstance(obj, np.ndarray):
             return obj.tolist()
         return super().default(obj)
+
 
 JSON_ENCODER = 'config.settings.ExtendedJSONEncoder'
 
@@ -159,12 +161,24 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = (
+  os.path.join(BASE_DIR, 'stat'),
+)
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = 'static/'
 
-# Default primary key field type
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True  # Only for development
+CSRF_TRUSTED_ORIGINS = []
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True

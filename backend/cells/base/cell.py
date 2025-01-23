@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+
 class BaseCell(ABC):
     @abstractmethod
     def process(self, data):
@@ -12,6 +13,7 @@ class BaseCell(ABC):
     def validate_input(self, data):
         """Validate the input data"""
         pass
+
 
 class BaseCellView(APIView):
     cell_class = None  # To be set by implementing cells

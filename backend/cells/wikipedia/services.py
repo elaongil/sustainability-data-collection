@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from ..base.cell import BaseCell
 
+
 class WikipediaExtractorCell(BaseCell):
     def validate_input(self, data):
         return 'source' in data and isinstance(data['source'], str)
