@@ -219,6 +219,33 @@ export const useChatStore = create((set, get) => ({
             analysis = "there was an error processing the uploaded files";
           }
           break;
+        case "annual-report-extractor":
+          try {
+            const reportComponent = document.createElement("div");
+            reportComponent.innerHTML = `
+                <div class="annual-report-processing-result">
+                  <h4>Annual Report Processing Results:</h4>
+                  <ul>
+                    ${responseData.filePaths
+                      .map(
+                        (path) => `
+                      <li>Processed report available at: ${path}</li>
+                    `
+                      )
+                      .join("")}
+                  </ul>
+                  <p>${responseData.message}</p>
+                </div>
+              `;
+
+            entities = "annual report PDFs";
+            analysis = "reports have been processed and are ready for review";
+          } catch (error) {
+            console.error("Annual report extraction error:", error);
+            entities = "annual report processing error";
+            analysis = "there was an error processing the uploaded reports";
+          }
+          break;
         case "entity-recognition":
           entities =
             "AI models, specifically GPT and BERT series, their developers like OpenAI and Google";

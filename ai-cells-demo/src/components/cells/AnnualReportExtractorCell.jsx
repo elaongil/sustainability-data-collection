@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
-import { Upload, Loader2, File, X } from 'lucide-react';
+import { Upload, Loader2, FileText, X } from 'lucide-react';
 import { useChatStore } from '../../store/chatStore';
 
-const CDPExtractorCell = () => {
+const AnnualReportExtractorCell = () => { 
   const { addMessage } = useChatStore();
   const [files, setFiles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const handleFileChange = (e) => {
-    const selectedFiles = Array.from(e.target.files);
+    const selectedFiles = Array.from(e.target.files)
+      .filter(file => file.type === 'application/pdf');
+
+    if (selectedFiles.length !== e.target.files.length) {
+      setError('Only PDF files are allowed');
+    }
+
     setFiles(prev => [...prev, ...selectedFiles]);
   };
 
@@ -29,15 +35,8 @@ const CDPExtractorCell = () => {
       formData.append('files', file);
     });
 
-    console.log('formData', formData.entries());
-    
-    // Display the key/value pairs
-    for (const pair of formData.entries()) {
-      console.log(pair[0], pair[1]);
-    }
-
     try {
-      const response = await fetch('/api/cells/cdp-extract/', {
+      const response = await fetch('/api/cells/annual-report/extract/', {
         method: 'POST',
         body: formData,
       });
@@ -48,11 +47,10 @@ const CDPExtractorCell = () => {
         throw new Error(data.message || 'Failed to process files');
       }
 
-      // Clear files after successful upload
       setFiles([]);
-      localStorage.setItem('cdp_output_path', data.filePaths);
+      localStorage.setItem('annual_report_output_path', data.filePaths);
       await addMessage(`${data.message} It available at ${data.filePaths}`,'ai');
-
+      
       return {
         success: true,
         message: data.message,
@@ -60,20 +58,17 @@ const CDPExtractorCell = () => {
       };
 
     } catch (err) {
-      setError(err.message || 'Failed to process files');
+      setError(err.message || 'Failed to process files'); 
       await addMessage(err.message,'ai');
-
       return {
         success: false,
         error: err.message
       };
-      
     } finally {
       setLoading(false);
     }
   };
 
-  // Function to truncate file name while preserving extension
   const truncateFileName = (fileName, maxLength = 14) => {
     if (fileName.length <= maxLength) return fileName;
     
@@ -93,22 +88,22 @@ const CDPExtractorCell = () => {
               type="file"
               onChange={handleFileChange}
               multiple
+              accept=".pdf"
               className="hidden"
-              id="file-upload"
+              id="annual-report-upload"
               disabled={loading}
             />
             <label
-              htmlFor="file-upload"
+              htmlFor="annual-report-upload"
               className="flex items-center justify-center w-full p-2 border-2 border-dashed rounded-md cursor-pointer hover:border-primary transition-colors"
             >
               <Upload className="w-4 h-4 mr-2 text-muted-foreground" />
               <span className="text-sm text-muted-foreground">
-                {files.length > 0 ? 'Add more files' : 'Upload Files'}
+                {files.length > 0 ? 'Add more PDFs' : 'Upload Reports'}
               </span>
             </label>
           </div>
 
-          {/* Submit button - Now in its own row */}
           {files.length > 0 && (
             <button
               type="submit"
@@ -122,15 +117,14 @@ const CDPExtractorCell = () => {
                 </>
               ) : (
                 <>
-                  <File className="h-4 w-4 mr-2" />
-                  <span>Process Files</span>
+                  <FileText className="h-4 w-4 mr-2" />
+                  <span>Process PDFs</span>
                 </>
               )}
             </button>
           )}
         </div>
 
-        {/* File List */}
         {files.length > 0 && (
           <div className="space-y-2 max-h-40 overflow-y-auto">
             {files.map((file, index) => (
@@ -139,7 +133,7 @@ const CDPExtractorCell = () => {
                 className="flex items-center justify-between p-2 bg-muted rounded-md"
               >
                 <div className="flex items-center space-x-2 min-w-0 flex-1">
-                  <File className="w-4 h-4 flex-shrink-0" />
+                  <FileText className="w-4 h-4 flex-shrink-0" />
                   <span className="text-sm truncate" title={file.name}>
                     {truncateFileName(file.name)}
                   </span>
@@ -167,4 +161,4 @@ const CDPExtractorCell = () => {
   );
 };
 
-export default CDPExtractorCell;
+export default AnnualReportExtractorCell;

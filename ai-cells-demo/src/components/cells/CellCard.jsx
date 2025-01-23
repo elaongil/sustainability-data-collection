@@ -5,6 +5,8 @@ import { useCellStore } from '../../store/cellStore';
 import { shouldAnimate } from '../../store/configStore';
 import WikipediaCell from './WikipediaCell';
 import CDPExtractorCell from './CDPExtractorCell';
+import AnnualReportExtractorCell from './AnnualReportExtractorCell';
+import EstimatorCell from './EstimatorCell';
 
 const cellIcons = {
   processor: Cpu,
@@ -63,7 +65,9 @@ const CellCard = ({ cell }) => {
             cell.active && 
             (
               (cell.id === 'wikipedia-extractor' && e.target.closest('form')) ||
-              (cell.id === 'cdp-extractor' && e.target.closest('form'))
+              (cell.id === 'cdp-extractor' && e.target.closest('form')) ||
+              (cell.id === 'annual-report-extractor' && e.target.closest('form')) || 
+              (cell.id === 'estimator' && e.target.closest('button'))
             )
           ) {
             e.stopPropagation();
@@ -143,6 +147,28 @@ const CellCard = ({ cell }) => {
                   <CDPExtractorCell />
                 </motion.div>
               )}
+
+            {cell.id === 'annual-report-extractor' && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="mt-2"
+                >
+                  <AnnualReportExtractorCell />
+                </motion.div>
+              )} 
+
+              {cell.id === 'estimator' && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="mt-2"
+                >
+                  <EstimatorCell />
+                </motion.div>
+              )} 
             </>
           )}
         </div>
