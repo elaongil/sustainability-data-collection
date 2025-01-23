@@ -293,7 +293,7 @@ class CCFEstimatorCell(BaseCell):
             }
 
         except Exception as e:
-            logger.error(f"Error during processing: {str(e)}")
+            logger.exception(f"Error during processing: {str(e)}")
             return {
                 'data': {
                     'output_path': None,

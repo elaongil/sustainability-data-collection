@@ -8,7 +8,6 @@ import re
 
 
 def get_ongil_ccf_estimates(df, predictors, pred_mat):
-    print(df)
     predictors = predictors.set_index('Year')
     wide_df = df.pivot(index = 'Year', columns = ['Scope','Parameter','Activity','Units'],values='Value')
     energy_pred1 = df.query('(Scope == "Scope 2") & (Activity == "Total") & (Parameter == "Energy Use Total")').set_index('Year')['Value'].rename('energy_use')
