@@ -8,6 +8,7 @@ import shutil
 from datetime import datetime
 
 from cells.base.helpers import clear_directory
+from cells.sustainability.get_ccf_data import generate_explainability_text, get_ongil_ccf_estimates
 from ..base.cell import BaseCell
 from ..base.serializers import FileUploadSerializer, SessionIdSerializer
 from .data_extraction import process_cdp_report, process_annual_report
@@ -210,11 +211,23 @@ class CCFEstimatorCell(BaseCell):
             return False
 
     def process(self, data, *args, **kwargs):
+
+        request = kwargs["request"]
+
         logger = logging.getLogger(__name__)
 
-        cdp_report_path = ""
-        annual_report_path = ""
+        serializer = SessionIdSerializer(data=data)
+        if serializer.is_valid():
+            pass
+
+        session_id = serializer.validated_data.get('session_id')
+
+        cdp_report_path = f"{UPLOAD_DIR}/{session_id}/CDPExtractorCell/output/CDPExtractorCell.xlsx"
+        annual_report_path = f"{UPLOAD_DIR}/{session_id}/AnnualReportExtractorCell/output/AnnualReportExtractorCell.xlsx"
         config_path = f"{MEDIA_ROOT}/required/beverage_config.xlsx"
+
+        output_folder_path = f"{UPLOAD_DIR}/{session_id}/{self.__class__.__name__}/output"
+        os.makedirs(output_folder_path, exist_ok=True)
 
         try:
             logger.info("Reading CDP report and annual report files...")
@@ -253,12 +266,13 @@ class CCFEstimatorCell(BaseCell):
             dependencies = pred_mat.join(chk)
 
             # Write outputs to Excel file
-            output_folder = data.get('output_folder', os.getcwd())
-            output_file_path = os.path.join(output_folder, 'final_output.xlsx')
+            output_file_path = os.path.join(output_folder_path, f'{self.__class__.__name__}.xlsx')
             with pd.ExcelWriter(output_file_path) as writer:
                 estimates.to_excel(writer, sheet_name='Data', index=False)
                 dependencies.to_excel(writer, sheet_name='Dependencies')
-            
+
+            output_file_url = urljoin(request.build_absolute_uri('/'), os.path.relpath(output_file_path))
+
             # Convert estimates and dependencies to JSON format
             estimates_json = estimates.to_dict(orient='records')
             explainability_json = chk.reset_index().to_dict(orient='records')
@@ -266,10 +280,10 @@ class CCFEstimatorCell(BaseCell):
             logger.info("Process completed successfully.")
             return {
                 'data': {
-                    'output_path': output_file_path,
+                    'output_path': output_file_url,
                     'metadata': {
-                        'cdp_report_path': cdp_report_path,
-                        'annual_report_path': annual_report_path,
+                        'cdp_report_path': urljoin(request.build_absolute_uri('/'), os.path.relpath(cdp_report_path)),
+                        'annual_report_path': urljoin(request.build_absolute_uri('/'), os.path.relpath(annual_report_path)),
                         'extraction_timestamp': datetime.now().isoformat()
                     },
                     'estimates': estimates_json,
