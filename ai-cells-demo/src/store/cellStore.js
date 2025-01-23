@@ -10,6 +10,22 @@ const INITIAL_CELLS = [
     position: { x: 100, y: 550 },
   },
   {
+    id: "annual-report-extractor",
+    name: "Annual Report Extractor",
+    description: "Upload and process Annual Report PDFs",
+    type: "processor",
+    active: false,
+    position: { x: 100, y: 350 },
+  },
+  {
+    id: "estimator",
+    name: "Estimator",
+    description: "Click estimate to get final output",
+    type: "processor",
+    active: false,
+    position: { x: 100, y: 250 },
+  },
+  {
     id: "wikipedia-extractor",
     name: "Wikipedia Data Extractor",
     description: "Extracts table data from Wikipedia pages",
@@ -70,6 +86,16 @@ const CELL_CONNECTIONS = [
   {
     id: "cdp-response",
     source: "cdp-extractor",
+    target: "response-generation",
+  },
+  {
+    id: "annual-report-response",
+    source: "annual-report-extractor",
+    target: "response-generation",
+  },
+  {
+    id: "estimator-response",
+    source: "estimator-extractor",
     target: "response-generation",
   },
 ];

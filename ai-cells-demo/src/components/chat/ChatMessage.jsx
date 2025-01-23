@@ -69,7 +69,7 @@ const ChatMessage = ({ message, isProcessing }) => {
               </div>
             ) : (
               <ReactMarkdown
-                className="whitespace-pre-wrap"
+                className="whitespace-pre-wra"
                 remarkPlugins={[
                   remarkGfm,
                   () => (tree) => {
