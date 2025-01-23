@@ -73,14 +73,14 @@ const ChatMessage = ({ message, isProcessing }) => {
                 remarkPlugins={[
                   remarkGfm,
                   () => (tree) => {
-                    console.log('Markdown AST:', JSON.stringify(tree, null, 2));
+                    //console.log('Markdown AST:', JSON.stringify(tree, null, 2));
                     return tree;
                   }
                 ]}
                 rehypePlugins={[
                   rehypeRaw,
                   () => (tree) => {
-                    console.log('HTML AST:', JSON.stringify(tree, null, 2));
+                    //console.log('HTML AST:', JSON.stringify(tree, null, 2));
                     return tree;
                   }
                 ]}

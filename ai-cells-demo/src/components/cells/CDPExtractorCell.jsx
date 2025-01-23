@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Upload, Loader2, File, X } from 'lucide-react';
 import { useChatStore } from '../../store/chatStore';
+import { getSessionId } from '../sessionUtils';
 
 const CDPExtractorCell = () => {
   const { addMessage } = useChatStore();
@@ -25,19 +26,19 @@ const CDPExtractorCell = () => {
     setError(null);
 
     const formData = new FormData();
-    files.forEach(file => {
-      formData.append('files', file);
+    files.forEach((file, index) => {
+      formData.append(`files`, file);
     });
-
-    console.log('formData', formData.entries());
-    
+ 
+    formData.append('session_id', getSessionId());
+     
     // Display the key/value pairs
-    for (const pair of formData.entries()) {
-      console.log(pair[0], pair[1]);
-    }
+    // for (const pair of formData.entries()) {
+    //   console.log(pair[0], pair[1]);
+    // }
 
     try {
-      const response = await fetch('/api/cells/cdp-extract/', {
+      const response = await fetch('/api/cells/cdp_extractor/', {
         method: 'POST',
         body: formData,
       });
@@ -46,12 +47,11 @@ const CDPExtractorCell = () => {
 
       if (!response.ok) {
         throw new Error(data.message || 'Failed to process files');
-      }
+      } 
 
       // Clear files after successful upload
-      setFiles([]);
-      localStorage.setItem('cdp_output_path', data.filePaths);
-      await addMessage(`${data.message} It available at ${data.filePaths}`,'ai');
+      setFiles([]); 
+      await addMessage(`Your CDP files have been processed successfully!<br><br> It available at <em>${data.data.output_path}</em>`,'ai');
 
       return {
         success: true,
@@ -60,8 +60,9 @@ const CDPExtractorCell = () => {
       };
 
     } catch (err) {
-      setError(err.message || 'Failed to process files');
-      await addMessage(err.message,'ai');
+      const msg = err.message || 'Failed to process files';
+      setError(msg);
+      await addMessage(msg,'ai');
 
       return {
         success: false,

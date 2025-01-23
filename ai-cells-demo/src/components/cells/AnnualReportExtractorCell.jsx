@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Upload, Loader2, FileText, X } from 'lucide-react';
 import { useChatStore } from '../../store/chatStore';
+import { getSessionId } from '../sessionUtils';
 
 const AnnualReportExtractorCell = () => { 
   const { addMessage } = useChatStore();
@@ -34,9 +35,10 @@ const AnnualReportExtractorCell = () => {
     files.forEach(file => {
       formData.append('files', file);
     });
+    formData.append('session_id', getSessionId());
 
     try {
-      const response = await fetch('/api/cells/annual-report/extract/', {
+      const response = await fetch('/api/cells/annual_report_extractor/', {
         method: 'POST',
         body: formData,
       });
@@ -48,8 +50,7 @@ const AnnualReportExtractorCell = () => {
       }
 
       setFiles([]);
-      localStorage.setItem('annual_report_output_path', data.filePaths);
-      await addMessage(`${data.message} It available at ${data.filePaths}`,'ai');
+      await addMessage(`Your Annual Reports have been processed successfully!<br><br> It available at <em>${data.data.output_path}</em>`,'ai');
       
       return {
         success: true,
@@ -58,8 +59,9 @@ const AnnualReportExtractorCell = () => {
       };
 
     } catch (err) {
-      setError(err.message || 'Failed to process files'); 
-      await addMessage(err.message,'ai');
+      const msg = err.message || 'Failed to process files';
+      setError(msg);
+      await addMessage(msg,'ai');
       return {
         success: false,
         error: err.message
