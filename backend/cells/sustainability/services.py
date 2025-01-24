@@ -276,7 +276,7 @@ class CCFEstimatorCell(BaseCell):
             output_file_url = urljoin(request.build_absolute_uri('/'), os.path.relpath(output_file_path))
 
             # Convert estimates and dependencies to JSON format
-            estimates_json = estimates.to_dict(orient='records')
+            estimates_json = estimates.fillna('').to_dict(orient='records')
             explainability_json = chk.reset_index().to_dict(orient='records')
 
             logger.info("Process completed successfully.")
