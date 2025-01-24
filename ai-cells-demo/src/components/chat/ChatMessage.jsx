@@ -90,7 +90,7 @@ const ChatMessage = ({ message, isProcessing }) => {
                     console.log('Table node:', node);
                     return (
                     <div className="my-4 border rounded-lg overflow-hidden">
-                      <div className="overflow-x-auto">
+                      <div className="overflow-x-auto h-80">
                         <table className="w-full">
                           {children}
                         </table>
@@ -114,7 +114,7 @@ const ChatMessage = ({ message, isProcessing }) => {
                     </tr>
                   ),
                   th: ({ children }) => (
-                    <th className="p-2 text-left font-medium bg-muted/50">
+                    <th className="p-2 text-left font-medium bg-muted/50 min-w-[100px]">
                       {children}
                     </th>
                   ),

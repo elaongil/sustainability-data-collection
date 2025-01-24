@@ -237,8 +237,7 @@ class CCFEstimatorCell(BaseCell):
             if 'Activity' not in df.columns:
                 df['Activity'] = 'Total'
             df['Year'] = df['Year'].astype(int)
-            df.loc[df['Units'] != 'MWh','Units'] = 'metric tonnes CO2e'
-            
+
             # Read the annual report
             predictors_long = pd.read_excel(annual_report_path).rename(columns={"Unit": 'Units'})
             predictors = predictors_long.set_index(['Year', 'Parameter'])['Value'].unstack('Parameter').reset_index()
@@ -260,7 +259,6 @@ class CCFEstimatorCell(BaseCell):
 
             logger.info("Generating estimates...")
             estimates = get_ongil_ccf_estimates(df, predictors, pred_mat)
-            estimates['Ongil Estimated'] = estimates['Ongil Estimated'].fillna(0)
 
             logger.info("Generating explainability text...")
             # graph_dicts = get_graph_links(df=estimates, inputs=predictors_long, matrix=pred_mat)

@@ -25,14 +25,14 @@ const INITIAL_CELLS = [
     active: false,
     position: { x: 100, y: 250 },
   },
-  {
-    id: "wikipedia-extractor",
-    name: "Wikipedia Data Extractor",
-    description: "Extracts table data from Wikipedia pages",
-    type: "processor",
-    active: false,
-    position: { x: 100, y: 550 },
-  },
+  // {
+  //   id: "wikipedia-extractor",
+  //   name: "Wikipedia Data Extractor",
+  //   description: "Extracts table data from Wikipedia pages",
+  //   type: "processor",
+  //   active: false,
+  //   position: { x: 100, y: 550 },
+  // },
   {
     id: "entity-recognition",
     name: "Entity Recognition",

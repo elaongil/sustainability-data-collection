@@ -1,22 +1,82 @@
 import React, { useState } from 'react';
 import { FileSpreadsheet, Loader2 } from 'lucide-react';
 import { useChatStore } from '../../store/chatStore';
+import { getSessionId } from '../sessionUtils';
+import SAMPLE_DATA from './sample.json';
 
-
-const formatExcelDataAsMarkdown = (data) => {
-    // Extract headers
-    const headers = Object.keys(data[0]);
-    
+ 
+  const formatExcelDataAsMarkdown = (data, excludedColumns = []) => {
+    // Extract headers and exclude unwanted columns
+    const headers = Object.keys(data[0]).filter(
+      (header) => !excludedColumns.includes(header)
+    );
+  
     // Create Markdown table
     const headerRow = `| ${headers.join(' | ')} |`;
     const separator = `| ${headers.map(() => '---').join(' | ')} |`;
-    
-    const dataRows = data.map(row => 
-      `| ${headers.map(header => row[header]).join(' | ')} |`
+  
+    const dataRows = data.map((row) =>
+      `| ${headers
+        .map((header) => {
+          // Replace newline characters in Explanation with <br> for better Markdown formatting
+          const cellContent =
+            header === "Explanation"
+              ? row[header].replace(/\n/g, "<br>")
+              : row[header];
+          return cellContent;
+        })
+        .join(" | ")} |`
     );
   
-    return [headerRow, separator, ...dataRows].join('\n');
+    return [headerRow, separator, ...dataRows].join("\n");
   };
+  
+
+  const formatExcelDataAsMarkdownWithStyles = (data, excludedColumns = [], options = {}) => {
+    const { tableHeight = "300px", minColumnWidth = "150px" } = options;
+  
+    // Extract headers and exclude unwanted columns
+    const headers = Object.keys(data[0]).filter(
+      (header) => !excludedColumns.includes(header)
+    );
+  
+    // Create the table rows with a fixed column width and newline formatting
+    const dataRows = data.map((row) =>
+      `<tr>${headers
+        .map((header) => {
+          const cellContent =
+            header === "Explanation"
+              ? row[header].replace(/\n/g, "<br>")
+              : row[header];
+          return `<td style="min-width:${minColumnWidth};">${cellContent}</td>`;
+        })
+        .join("")}</tr>`
+    );
+  
+    // Construct the table in HTML with scrollable div
+    const tableHTML = `
+    <div style="max-height: ${tableHeight}; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+      <table style="border-collapse: collapse; width: 100%; text-align: left;">
+        <thead>
+          <tr>
+            ${headers
+              .map(
+                (header) =>
+                  `<th style="min-width:${minColumnWidth}; border-bottom: 1px solid #ccc;">${header}</th>`
+              )
+              .join("")}
+          </tr>
+        </thead>
+        <tbody>
+          ${dataRows.join("\n")}
+        </tbody>
+      </table>
+    </div>`;
+  
+    return tableHTML;
+  };
+  
+  
 
 
 const EstimatorCell = () => { 
@@ -27,17 +87,16 @@ const EstimatorCell = () => {
   const handleEstimate = async () => {
     setLoading(true);
     setError(null);
-    setExcelData(null);
+    //setExcelData(null);
 
     try {
-      const response = await fetch('/api/cells/estimator/calculate/', {
+      const response = await fetch('/api/cells/ccf_estimator/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          cdpFilePath: localStorage.getItem('cdp_output_path'),
-          annualReportFilePath: localStorage.getItem('annual_report_output_path')
+          session_id: getSessionId()
         })
       });
 
@@ -46,34 +105,12 @@ const EstimatorCell = () => {
       }
 
       const data = await response.json();
-      setExcelData(data.excelData);
-
-      const sampleExcelData = [
-        {
-          "Quarter": "Q1 2024",
-          "Revenue": 500000,
-          "Cost": 350000,
-          "Margin": 150000,
-          "Margin %": "30%"
-        },
-        {
-          "Quarter": "Q2 2024",
-          "Revenue": 600000,
-          "Cost": 400000,
-          "Margin": 200000,
-          "Margin %": "33.3%"
-        },
-        {
-          "Quarter": "Q3 2024",
-          "Revenue": 750000,
-          "Cost": 450000,
-          "Margin": 300000,
-          "Margin %": "40%"
-        }
-      ];
+      //setExcelData(data.excelData);
+ 
+      console.log('Response data', data);
 
       useChatStore.getState().addMessage(
-        `## Estimation Results\n\n${formatExcelDataAsMarkdown(sampleExcelData)}`, 
+        `## <strong>Estimation:</strong>\n\n${formatExcelDataAsMarkdown(data.data.estimates, ["Activity", "Units"])}\n\n## <strong>Explanation:</strong>\n\n${formatExcelDataAsMarkdown(data.data.explanation, ["Activity"])}`, 
         'ai'
       );
 
@@ -129,7 +166,7 @@ const EstimatorCell = () => {
         {loading ? (
           <>
             <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-            <span>Generating Estimate...</span>
+            <span>Estimating...</span>
           </>
         ) : (
           <>
@@ -145,7 +182,7 @@ const EstimatorCell = () => {
         </div>
       )}
 
-      {excelData && renderExcelTable()}
+      {/* {excelData && renderExcelTable()} */}
     </div>
   );
 };

@@ -1,0 +1,2070 @@
+{
+  "output_path": null,
+  "data": {
+    "estimates": [
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Total scope 1 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 707152,
+        "Confidence": "High",
+        "Ongil Estimated": 605900
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Fugitive emissions",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Mobile combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 1",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 2",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Stationary combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 1256603,
+        "Confidence": "High",
+        "Ongil Estimated": 1166664
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Produced Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 1409716,
+        "Confidence": "High",
+        "Ongil Estimated": 1324219
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Purchased Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 1269336,
+        "Confidence": "High",
+        "Ongil Estimated": 1190783
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Use Total",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 2679053,
+        "Confidence": "High",
+        "Ongil Estimated": 2515002
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Indirect Energy Use",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 174863,
+        "Confidence": "High",
+        "Ongil Estimated": 152107
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 53439,
+        "Confidence": "Low",
+        "Ongil Estimated": 126512
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Total Renewable Energy",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2018,
+        "Company Reported": 228301,
+        "Confidence": "Medium",
+        "Ongil Estimated": 278619
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 800918,
+        "Confidence": null,
+        "Ongil Estimated": 800918
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 765503,
+        "Confidence": null,
+        "Ongil Estimated": 765503
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": "Not Applicable",
+        "Ongil Estimated": 820586
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": "Not Applicable",
+        "Ongil Estimated": 771857
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  1- Purchased goods and services",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 24580947,
+        "Confidence": "High",
+        "Ongil Estimated": 21739171
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  2-Capital goods",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 1799000,
+        "Confidence": "High",
+        "Ongil Estimated": 1447839
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  3- Fuel-and-energy-related activities (not included in Scope 1 or 2)",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  4- Upstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  5- Waste generated in operations",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  6- Business travel",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 142413,
+        "Confidence": null,
+        "Ongil Estimated": 142413
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  7- Employee commuting",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  8- Upstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  9- Downstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 2790975,
+        "Confidence": "Low",
+        "Ongil Estimated": 1523728
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 10- Processing of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 21387871,
+        "Confidence": "High",
+        "Ongil Estimated": 19319300
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 11- Use of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 12- End of life treatment of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 13- Downstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 14- Franchises",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 4426432,
+        "Confidence": "High",
+        "Ongil Estimated": 4717561
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 15- Investments [row hidden for FS sector companies, data point requested in C-FS14.1a]",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other downstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other upstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Total scope 3 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2018,
+        "Company Reported": 55127638,
+        "Confidence": "High",
+        "Ongil Estimated": 48890012
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Total scope 1 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 687597,
+        "Confidence": "High",
+        "Ongil Estimated": 620229
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Fugitive emissions",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Mobile combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 1",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 2",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Stationary combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 1398875,
+        "Confidence": "High",
+        "Ongil Estimated": 1364794
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Produced Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 1457198,
+        "Confidence": "High",
+        "Ongil Estimated": 1355535
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Purchased Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 1411608,
+        "Confidence": "High",
+        "Ongil Estimated": 1393010
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Use Total",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 2868807,
+        "Confidence": "High",
+        "Ongil Estimated": 2748545
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Indirect Energy Use",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 165687,
+        "Confidence": "High",
+        "Ongil Estimated": 177938
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 67480,
+        "Confidence": "Low",
+        "Ongil Estimated": 147998
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Total Renewable Energy",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2019,
+        "Company Reported": 233168,
+        "Confidence": "Medium",
+        "Ongil Estimated": 325936
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2019,
+        "Company Reported": 868343,
+        "Confidence": "High",
+        "Ongil Estimated": 839991
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2019,
+        "Company Reported": 871304,
+        "Confidence": "High",
+        "Ongil Estimated": 830086
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  1- Purchased goods and services",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 22809959,
+        "Confidence": "High",
+        "Ongil Estimated": 27001270
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  2-Capital goods",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 1799000,
+        "Confidence": "High",
+        "Ongil Estimated": 1906180
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  3- Fuel-and-energy-related activities (not included in Scope 1 or 2)",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  4- Upstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  5- Waste generated in operations",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  6- Business travel",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 130838,
+        "Confidence": null,
+        "Ongil Estimated": 130838
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  7- Employee commuting",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  8- Upstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  9- Downstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 2290854,
+        "Confidence": "Not Applicable",
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 10- Processing of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 22630377,
+        "Confidence": "High",
+        "Ongil Estimated": 19776176
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 11- Use of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 12- End of life treatment of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 13- Downstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 14- Franchises",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 4378013,
+        "Confidence": "High",
+        "Ongil Estimated": 4054154
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 15- Investments [row hidden for FS sector companies, data point requested in C-FS14.1a]",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other downstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other upstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Total scope 3 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2019,
+        "Company Reported": 54039041,
+        "Confidence": "High",
+        "Ongil Estimated": 55159472
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Total scope 1 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 793460,
+        "Confidence": "Medium",
+        "Ongil Estimated": 593618
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Fugitive emissions",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Mobile combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 1",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 2",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Stationary combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 1209437,
+        "Confidence": "High",
+        "Ongil Estimated": 1209073
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Produced Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 1346141,
+        "Confidence": "High",
+        "Ongil Estimated": 1297377
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Purchased Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 1230775,
+        "Confidence": "High",
+        "Ongil Estimated": 1234069
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Use Total",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 2576916,
+        "Confidence": "High",
+        "Ongil Estimated": 2531446
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Indirect Energy Use",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 125845,
+        "Confidence": "Medium",
+        "Ongil Estimated": 157636
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 95532,
+        "Confidence": "Medium",
+        "Ongil Estimated": 131111
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Total Renewable Energy",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2020,
+        "Company Reported": 221377,
+        "Confidence": "Medium",
+        "Ongil Estimated": 288747
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2020,
+        "Company Reported": 802707,
+        "Confidence": "High",
+        "Ongil Estimated": 803952
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2020,
+        "Company Reported": 747876,
+        "Confidence": "High",
+        "Ongil Estimated": 741870
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  1- Purchased goods and services",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 21492100,
+        "Confidence": "High",
+        "Ongil Estimated": 24810730
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  2-Capital goods",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 1799000,
+        "Confidence": "High",
+        "Ongil Estimated": 1895451
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  3- Fuel-and-energy-related activities (not included in Scope 1 or 2)",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  4- Upstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  5- Waste generated in operations",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  6- Business travel",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 19826,
+        "Confidence": null,
+        "Ongil Estimated": 19826
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  7- Employee commuting",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  8- Upstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  9- Downstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 2514372,
+        "Confidence": "High",
+        "Ongil Estimated": 2363077
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 10- Processing of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 20456130,
+        "Confidence": "High",
+        "Ongil Estimated": 18927693
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 11- Use of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 12- End of life treatment of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 13- Downstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 14- Franchises",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 4138811,
+        "Confidence": "High",
+        "Ongil Estimated": 4127866
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 15- Investments [row hidden for FS sector companies, data point requested in C-FS14.1a]",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other downstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other upstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Total scope 3 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2020,
+        "Company Reported": 50420239,
+        "Confidence": "High",
+        "Ongil Estimated": 52144643
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Total scope 1 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 555510,
+        "Confidence": "High",
+        "Ongil Estimated": 640698
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Fugitive emissions",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Mobile combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 1",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 2",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Stationary combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 1379393,
+        "Confidence": "High",
+        "Ongil Estimated": 1415664
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Produced Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 1328524,
+        "Confidence": "High",
+        "Ongil Estimated": 1400272
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Purchased Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 1413422,
+        "Confidence": "High",
+        "Ongil Estimated": 1444931
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Use Total",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 2735384,
+        "Confidence": "High",
+        "Ongil Estimated": 2845203
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Indirect Energy Use",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 176441,
+        "Confidence": "High",
+        "Ongil Estimated": 184571
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 97837,
+        "Confidence": "Low",
+        "Ongil Estimated": 153514
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Total Renewable Energy",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2021,
+        "Company Reported": 267716,
+        "Confidence": "Medium",
+        "Ongil Estimated": 338085
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2021,
+        "Company Reported": 869832,
+        "Confidence": "High",
+        "Ongil Estimated": 867714
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2021,
+        "Company Reported": 815908,
+        "Confidence": "High",
+        "Ongil Estimated": 777184
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  1- Purchased goods and services",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 31578218,
+        "Confidence": "High",
+        "Ongil Estimated": 28364354
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  2-Capital goods",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": "Low",
+        "Ongil Estimated": 1744723
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  3- Fuel-and-energy-related activities (not included in Scope 1 or 2)",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  4- Upstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  5- Waste generated in operations",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  6- Business travel",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 12537,
+        "Confidence": null,
+        "Ongil Estimated": 12537
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  7- Employee commuting",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  8- Upstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  9- Downstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 1965894,
+        "Confidence": "High",
+        "Ongil Estimated": 2305747
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 10- Processing of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 20103961,
+        "Confidence": "High",
+        "Ongil Estimated": 20428855
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 11- Use of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 12- End of life treatment of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 13- Downstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 14- Franchises",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 4299247,
+        "Confidence": "High",
+        "Ongil Estimated": 4127866
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 15- Investments [row hidden for FS sector companies, data point requested in C-FS14.1a]",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other downstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other upstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Total scope 3 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2021,
+        "Company Reported": 57959857,
+        "Confidence": "High",
+        "Ongil Estimated": 56984082
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Total scope 1 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 533906,
+        "Confidence": "Medium",
+        "Ongil Estimated": 669356
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Fugitive emissions",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Mobile combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 1",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 2",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Stationary combustion",
+        "Activity": "Total",
+        "Units": "none",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 1552691,
+        "Confidence": "High",
+        "Ongil Estimated": 1574937
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Produced Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 1398266,
+        "Confidence": "High",
+        "Ongil Estimated": 1462904
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Purchased Direct",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 1595467,
+        "Confidence": "High",
+        "Ongil Estimated": 1607497
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Use Total",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 2993732,
+        "Confidence": "High",
+        "Ongil Estimated": 3070401
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Indirect Energy Use",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Produced",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 226389,
+        "Confidence": "High",
+        "Ongil Estimated": 205336
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Purchased",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 297942,
+        "Confidence": "Low",
+        "Ongil Estimated": 170785
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Total Renewable Energy",
+        "Activity": "Total",
+        "Units": "MWh",
+        "Year": 2022,
+        "Company Reported": 524332,
+        "Confidence": "Medium",
+        "Ongil Estimated": 376121
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2022,
+        "Company Reported": 890400,
+        "Confidence": "High",
+        "Ongil Estimated": 906525
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Units": "metric tons Co2e",
+        "Year": 2022,
+        "Company Reported": 716045,
+        "Confidence": "High",
+        "Ongil Estimated": 777730
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  1- Purchased goods and services",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 33754685,
+        "Confidence": "High",
+        "Ongil Estimated": 33245971
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  2-Capital goods",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": "Low",
+        "Ongil Estimated": 1730828
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  3- Fuel-and-energy-related activities (not included in Scope 1 or 2)",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 1826054,
+        "Confidence": null,
+        "Ongil Estimated": 1826054
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  4- Upstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  5- Waste generated in operations",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  6- Business travel",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 65530,
+        "Confidence": null,
+        "Ongil Estimated": 65530
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  7- Employee commuting",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  8- Upstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category  9- Downstream transportation and distribution",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 2266231,
+        "Confidence": "High",
+        "Ongil Estimated": 2478633
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 10- Processing of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 18226931,
+        "Confidence": "High",
+        "Ongil Estimated": 21342605
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 11- Use of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 12- End of life treatment of sold products",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 13- Downstream leased assets",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 14- Franchises",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 3953830,
+        "Confidence": "High",
+        "Ongil Estimated": 4127866
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 15- Investments [row hidden for FS sector companies, data point requested in C-FS14.1a]",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other downstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other upstream emissions",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 0,
+        "Confidence": null,
+        "Ongil Estimated": 0
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Total scope 3 emission",
+        "Activity": "Total",
+        "Units": "metric tons CO2e",
+        "Year": 2022,
+        "Company Reported": 60093261,
+        "Confidence": "High",
+        "Ongil Estimated": 64817487
+      }
+    ],
+    "explanation": [
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Fugitive emissions",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Fugitive emissions\"\" is described as Direct greenhouse gas emissions from intentional or unintentional releases\nFor calculating the Scope 1 activity \"Total\" under parameter \"Fugitive emissions\",the total Fugitive emissions reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Finished product sales: Total sales of the segment \u201cFinished Products\u201d"
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Mobile combustion",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Mobile combustion\"\" is described as Direct emissions from combustion of fuels in transportation\nFor calculating the Scope 1 activity \"Total\" under parameter \"Mobile combustion\",the total Mobile combustion reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Selling and distribution expenses: Amount spent on Transporting goods to their poiint of sale and manufacturing them\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 1",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Process emissions 1\"\" is described as Facility emissions- CO2 (biogenic or non bio-geneic), N2O, CH4\nFor calculating the Scope 1 activity \"Total\" under parameter \"Process emissions 1\",the total Process emissions 1 reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Cost of goods sold: Total amount spent on purchasing ingredients for the products sold by the company and manufacturing them\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Process emissions 2",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Process emissions 2\"\" is described as VOC emissions- release of VOCs from chemical manufacturing processes or paint application\nFor calculating the Scope 1 activity \"Total\" under parameter \"Process emissions 2\",the total Process emissions 2 reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Stationary combustion",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Stationary combustion\"\" is described as Direct emissions from combustion of fuels for energy in stationary sources\nFor calculating the Scope 1 activity \"Total\" under parameter \"Stationary combustion\",the total Stationary combustion reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 1",
+        "Parameter": "Total scope 1 emission",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Total scope 1 emission\"\" is described as Total direct greenhouse gas emissions from owned or controlled sources\nFor calculating the Scope 1 activity \"Total\" under parameter \"Total scope 1 emission\",the total Total scope 1 emission reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Cost of goods sold: Total amount spent on purchasing ingredients for the products sold by the company and manufacturing them\n Volume sold: The total actual quantity of goods sold by the company\n Finished product sales: Total sales of the segment \u201cFinished Products\u201d"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Location Based",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Location Based\"\" is described as Scope 2 emissions using grid average emission factors\nFor calculating the Scope 2 activity \"Total\" under parameter \"Location Based\",the total Location Based reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Market Based",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Market Based\"\" is described as Scope 2 emissions using supplier-specific emission factors\nFor calculating the Scope 2 activity \"Total\" under parameter \"Market Based\",the total Market Based reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Produced",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Electricity Produced\"\" is described as Electricity generated and sold to end users\nFor calculating the Scope 2 activity \"Total\" under parameter \"Electricity Produced\",the total Electricity Produced reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Electricity Purchased",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Electricity Purchased\"\" is described as Electricity purchased from utilities/providers\nFor calculating the Scope 2 activity \"Total\" under parameter \"Electricity Purchased\",the total Electricity Purchased reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Produced Direct",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Energy Produced Direct\"\" is described as Direct energy produced (heat, steam, etc.)\nFor calculating the Scope 2 activity \"Total\" under parameter \"Energy Produced Direct\",the total Energy Produced Direct reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Purchased Direct",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Energy Purchased Direct\"\" is described as Direct energy purchased from utilities/providers\nFor calculating the Scope 2 activity \"Total\" under parameter \"Energy Purchased Direct\",the total Energy Purchased Direct reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Energy Use Total",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Energy Use Total\"\" is described as Total direct and indirect energy use\nFor calculating the Scope 2 activity \"Total\" under parameter \"Energy Use Total\",the total Energy Use Total reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Indirect Energy Use",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Indirect Energy Use\"\" is described as Indirect energy consumption from purchased electricity, heat, etc.\nFor calculating the Scope 2 activity \"Total\" under parameter \"Indirect Energy Use\",the total Indirect Energy Use reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Produced",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Renewable Energy Produced\"\" is described as Renewable energy generated on-site or off-site\nFor calculating the Scope 2 activity \"Total\" under parameter \"Renewable Energy Produced\",the total Renewable Energy Produced reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Renewable Energy Purchased",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Renewable Energy Purchased\"\" is described as Renewable energy purchased from utilities/providers\nFor calculating the Scope 2 activity \"Total\" under parameter \"Renewable Energy Purchased\",the total Renewable Energy Purchased reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 2",
+        "Parameter": "Total Renewable Energy",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Total Renewable Energy\"\" is described as Total renewable energy produced and purchased\nFor calculating the Scope 2 activity \"Total\" under parameter \"Total Renewable Energy\",the total Total Renewable Energy reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 1- Purchased goods and services",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 1- Purchased goods and services\"\" is described as Upstream emissions from production of goods/services purchased\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 1- Purchased goods and services\",the total Category 1- Purchased goods and services reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Cost of goods sold: Total amount spent on purchasing ingredients for the products sold by the company and manufacturing them"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 2-Capital goods",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 2-Capital goods\"\" is described as Upstream emissions from production of capital goods\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 2-Capital goods\",the total Category 2-Capital goods reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 3- Fuel-and-energy-related activities (not included in Scope 1 or 2)",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 3- Fuel-and-energy-related activities (not included in Scope 1 or 2)\"\" is described as Emissions related to extraction, production and transportation of fuels and energy purchased\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 3- Fuel-and-energy-related activities (not included in Scope 1 or 2)\",the total Category 3- Fuel-and-energy-related activities (not included in Scope 1 or 2) reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Cost of goods sold: Total amount spent on purchasing ingredients for the products sold by the company and manufacturing them"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 4- Upstream transportation and distribution",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 4- Upstream transportation and distribution\"\" is described as Emissions from transportation and distribution of products purchased\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 4- Upstream transportation and distribution\",the total Category 4- Upstream transportation and distribution reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 5- Waste generated in operations",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 5- Waste generated in operations\"\" is described as Emissions from disposal and treatment of waste\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 5- Waste generated in operations\",the total Category 5- Waste generated in operations reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 6- Business travel",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 6- Business travel\"\" is described as Emissions from transportation of employees for business-related activities\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 6- Business travel\",the total Category 6- Business travel reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Employee count: The number of employees working in the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 7- Employee commuting",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 7- Employee commuting\"\" is described as Emissions from transportation of employees between homes and worksites\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 7- Employee commuting\",the total Category 7- Employee commuting reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Employee count: The number of employees working in the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 8- Upstream leased assets",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 8- Upstream leased assets\"\" is described as Emissions from operation of assets leased by the company\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 8- Upstream leased assets\",the total Category 8- Upstream leased assets reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 9- Downstream transportation and distribution",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 9- Downstream transportation and distribution\"\" is described as Emissions from transportation and distribution of sold products\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 9- Downstream transportation and distribution\",the total Category 9- Downstream transportation and distribution reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Selling and distribution expenses: Amount spent on Transporting goods to their poiint of sale and manufacturing them"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 10- Processing of sold products",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 10- Processing of sold products\"\" is described as Emissions from processing of sold products by third parties\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 10- Processing of sold products\",the total Category 10- Processing of sold products reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 11- Use of sold products",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 11- Use of sold products\"\" is described as Emissions from use of sold products by end users\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 11- Use of sold products\",the total Category 11- Use of sold products reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 12- End of life treatment of sold products",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 12- End of life treatment of sold products\"\" is described as Emissions from disposal and treatment of sold products at the end of their life\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 12- End of life treatment of sold products\",the total Category 12- End of life treatment of sold products reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Volume sold: The total actual quantity of goods sold by the company"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 13- Downstream leased assets",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 13- Downstream leased assets\"\" is described as Emissions from operation of assets owned and leased to third parties\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 13- Downstream leased assets\",the total Category 13- Downstream leased assets reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 14- Franchises",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 14- Franchises\"\" is described as Emissions from operation of franchises not included in Scope 1 or 2\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 14- Franchises\",the total Category 14- Franchises reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Concentrate Operations revenue share: Revenue share of the segment \u201cConcentrate Operations\u201d as part of the company\u2019s total sales\n Concentrate Sales: Total sales of the segment \u201cConcentrate Operations\u201d"
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Category 15- Investments [row hidden for FS sector companies, data point requested in C-FS14.1a]",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Category 15- Investments\"\" is described as Emissions associated with investments (requested separately for financial sector companies)\nFor calculating the Scope 3 activity \"Total\" under parameter \"Category 15- Investments\",the total Category 15- Investments reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other downstream emissions",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Other downstream emissions\"\" is described as Other indirect emissions from downstream in the value chain\nFor calculating the Scope 3 activity \"Total\" under parameter \"Other downstream emissions\",the total Other downstream emissions reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Other upstream emissions",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Other upstream emissions\"\" is described as Other indirect emissions from upstream in the value chain\nFor calculating the Scope 3 activity \"Total\" under parameter \"Other upstream emissions\",the total Other upstream emissions reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n "
+      },
+      {
+        "Scope": "Scope 3",
+        "Parameter": "Total scope 3 emission",
+        "Activity": "Total",
+        "Explanation": "The parameter \"Total scope 3 emission\"\" is described as Total indirect emissions from activities in the value chain\nFor calculating the Scope 3 activity \"Total\" under parameter \"Total scope 3 emission\",the total Total scope 3 emission reported by Ryder was used as a starting point.\nThen, The yearly trend of the parameters below was used for correlation analysis to determine confidence in the reported value and to ajdust the corresponding estimate accordingly:\n Revenue: Total amount of income generated by the sale of goods and services related to the primary operations of the business\n Cost of goods sold: Total amount spent on purchasing ingredients for the products sold by the company and manufacturing them\n Property, plant and equipment: Total monetary value of property, plants and equipment owned by the company\n Volume sold: The total actual quantity of goods sold by the company\n Concentrate Operations revenue share: Revenue share of the segment \u201cConcentrate Operations\u201d as part of the company\u2019s total sales\n Concentrate Sales: Total sales of the segment \u201cConcentrate Operations\u201d"
+      }
+    ],
+    "error": null
+  }
+}

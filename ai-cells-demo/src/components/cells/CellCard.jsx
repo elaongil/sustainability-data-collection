@@ -108,7 +108,7 @@ const CellCard = ({ cell }) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="mt-2 flex items-center gap-2"
+                className="mt-2 flex items-center hidden gap-2"
               >
                 <div className="flex-1 h-1 bg-muted rounded-full overflow-hidden">
                   <motion.div
